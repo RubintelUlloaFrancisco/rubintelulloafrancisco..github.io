@@ -58,29 +58,3 @@
 Estoy abierto a conectar con profesionales apasionados por los datos y la tecnología. Puedes contactarme en [LinkedIn](https://www.linkedin.com/in/rubintelulloa/) para posibles colaboraciones o proyectos.
 
 ---
-
-<style>
-/* Esto no funcionará en GitHub pero puedes usar CSS en GitHub Pages o tu propio sitio web */
-body {
-  font-family: Arial, sans-serif;
-}
-
-h1, h2, h3 {
-  color: #333;
-}
-
-table {
-  width: 100%;
-  margin: 20px 0;
-  border-collapse: collapse;
-}
-
-table, th, td {
-  border: 1px solid #ddd;
-  padding: 10px;
-}
-
-th {
-  background-color: #f4f4f4;
-}
-</style>
