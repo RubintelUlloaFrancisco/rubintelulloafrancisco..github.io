@@ -7,6 +7,68 @@ body {
   padding: 0;
   background-color: #eef1f7;
   scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Modo Oscuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode header {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode section {
+  background-color: #1f1f1f;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .skill, 
+body.dark-mode .certification, 
+body.dark-mode .testimonial, 
+body.dark-mode .blog-posts .post {
+  background-color: #2c2c2c;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .download-cv,
+body.dark-mode form button {
+  background-color: #00adb5;
+  color: #fff;
+}
+
+body.dark-mode form input, 
+body.dark-mode form textarea {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+/* Botón de Modo Oscuro */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #00adb5;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+.theme-toggle:hover {
+  background-color: #007a7f;
+  transform: scale(1.1);
 }
 
 /* Encabezado */
@@ -89,6 +151,18 @@ section h2 {
   border-bottom: 3px solid #00adb5;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: #00adb5;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Contenedores de habilidades */
@@ -97,6 +171,7 @@ section h2 {
   flex-wrap: wrap;
   gap: 1.5rem;
   margin-top: 1rem;
+  justify-content: center;
 }
 
 .skill {
@@ -106,7 +181,13 @@ section h2 {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill i {
+  font-size: 2rem;
+  color: #00adb5;
+  margin-bottom: 0.5rem;
 }
 
 .skill h3 {
@@ -117,19 +198,34 @@ section h2 {
 
 .skill:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Sección de proyectos */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
 .project {
-  margin-bottom: 2.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
 .project img {
-  max-width: 100%;
-  border-radius: 8px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .project img:hover {
@@ -139,15 +235,274 @@ section h2 {
 
 .project h3 {
   color: #00adb5;
-  margin-top: 1rem;
+  margin: 1rem 0 0.5rem 0;
 }
 
 .project p {
-  margin-top: 0.5rem;
+  margin: 0 1rem 1rem 1rem;
   color: #555;
+  flex-grow: 1;
 }
 
-/* Contenedor de redes sociales */
+.project a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Sección GitHub */
+.github-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.featured-projects {
+  margin-top: 2rem;
+}
+
+.featured-projects h3 {
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.featured-projects .featured-project {
+  margin-bottom: 1.5rem;
+}
+
+.featured-projects .featured-project a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-projects .featured-project img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-projects .featured-project img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.featured-projects .featured-project h4 {
+  margin-top: 0.5rem;
+  color: #00adb5;
+}
+
+/* Sección Testimonios */
+#testimonials {
+  background-color: #f0f4f8;
+  padding: 2rem 1rem;
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.testimonial {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonial:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #00adb5;
+}
+
+.testimonial h3 {
+  font-size: 1.2rem;
+  color: #00adb5;
+  margin-bottom: 0.3rem;
+}
+
+.testimonial .position {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial .date {
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: 1rem;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Sección Certificaciones */
+.certifications-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.certification {
+  flex: 1 1 300px;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.certification i {
+  font-size: 1.5rem;
+  color: #00adb5;
+  margin-bottom: 0.5rem;
+}
+
+.certification h3 {
+  color: #00adb5;
+  margin-bottom: 0.5rem;
+}
+
+.certification:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección Blog Técnico */
+.blog-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.blog-posts .post {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-posts .post:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.blog-posts .post h3 a {
+  color: #00adb5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-posts .post h3 a:hover {
+  color: #007a7f;
+  text-decoration: underline;
+}
+
+/* Formulario de Contacto */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+#contact form label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+#contact form input, 
+#contact form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+#contact form input:focus, 
+#contact form textarea:focus {
+  border-color: #00adb5;
+  outline: none;
+}
+
+#contact form button {
+  width: 150px;
+  padding: 0.75rem;
+  background-color: #00adb5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: center;
+  transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+  background-color: #007a7f;
+}
+
+/* Descarga CV */
+.download-cv {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #00adb5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.download-cv:hover {
+  background-color: #007a7f;
+}
+
+/* Mensajes de Formulario de Contacto */
+.success-message {
+  color: #28a745;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.error-message {
+  color: #dc3545;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Contenedores de redes sociales */
 .social-icons {
   display: flex;
   justify-content: center;
@@ -190,198 +545,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Sección Testimonios */
-#testimonials {
-  text-align: center;
-  padding: 2rem 1rem;
-  background-color: #f0f4f8;
-}
-
-.testimonials-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 1.5rem;
-}
-
-.testimonial {
-  background-color: #ffffff;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.testimonial:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.testimonial-photo {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
-  border: 3px solid #00adb5;
-}
-
-.testimonial h3 {
-  font-size: 1.2rem;
-  color: #00adb5;
-  margin-bottom: 0.3rem;
-}
-
-.testimonial .position {
-  font-size: 0.9rem;
-  color: #555;
-  margin-bottom: 0.5rem;
-}
-
-.testimonial .date {
-  font-size: 0.8rem;
-  color: #999;
-  margin-bottom: 1rem;
-}
-
-.testimonial-text {
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.5;
-}
-
-/* Sección Certificaciones */
-#certifications {
-  text-align: center;
-}
-
-.certifications-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.certification {
-  flex: 1 1 300px;
-  background-color: #f9f9f9;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.certification:hover {
-  transform: scale(1.05);
-}
-
-.certification h3 {
-  color: #00adb5;
-  margin-bottom: 0.5rem;
-}
-
-/* Sección Blog */
-#blog {
-  text-align: center;
-}
-
-.blog-posts {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-top: 1rem;
-}
-
-.blog-posts .post {
-  background-color: #f9f9f9;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.blog-posts .post:hover {
-  transform: scale(1.02);
-}
-
-.blog-posts .post h3 a {
-  color: #00adb5;
-  text-decoration: none;
-}
-
-.blog-posts .post h3 a:hover {
-  text-decoration: underline;
-}
-
-/* Formulario de Contacto */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 600px;
-  margin: 2rem auto;
-}
-
-form label {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-form input, form textarea {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-form button {
-  width: 150px;
-  padding: 0.75rem;
-  background-color: #00adb5;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  align-self: center;
-  transition: background-color 0.3s ease;
-}
-
-form button:hover {
-  background-color: #007a7f;
-}
-
-/* Descarga CV */
-.download-cv {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #00adb5;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.download-cv:hover {
-  background-color: #007a7f;
-}
-
-/* Mensajes de Formulario de Contacto */
-.success-message {
-  color: #28a745;
-  font-weight: bold;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.error-message {
-  color: #dc3545;
-  font-weight: bold;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-/* Ajustes para pantallas pequeñas */
+/* Responsive Design */
 @media (max-width: 768px) {
   header h1 {
       font-size: 2rem;
@@ -398,4 +562,41 @@ form button:hover {
       flex-direction: column;
       gap: 1rem;
   }
+  .projects-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .testimonials-container {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode header {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode section {
+  background-color: #1f1f1f;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .skill, 
+body.dark-mode .certification, 
+body.dark-mode .testimonial, 
+body.dark-mode .blog-posts .post {
+  background-color: #2c2c2c;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .download-cv,
+body.dark-mode form button {
+  background-color: #00adb5;
+  color: #fff;
+}
+
+body.dark-mode form input, 
+body.dark-mode form textarea {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
 }

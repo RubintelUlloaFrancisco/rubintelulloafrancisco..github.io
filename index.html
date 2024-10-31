@@ -2,13 +2,40 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Perfil Profesional - Rubintel Ulloa Francisco</title>
   <meta name="description" content="Perfil profesional de Rubintel Ulloa Francisco, Data Scientist, Gerente de Proyectos y Coordinador TI. Especializado en Machine Learning, Power BI y Transformación Digital.">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="keywords" content="Data Scientist, Machine Learning, Power BI, Transformación Digital, SQL, Python, Ciberseguridad, Gestión de Proyectos, Big Data">
+  <meta name="author" content="Rubintel Ulloa Francisco">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  
+  <!-- Estilos -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Theme Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleButton = document.getElementById('theme-toggle');
+      toggleButton.addEventListener('click', function () {
+        document.body.classList.toggle('dark-mode');
+      });
+    });
+  </script>
 </head>
 <body>
+
+  <!-- Botón de Modo Oscuro -->
+  <button id="theme-toggle" aria-label="Cambiar modo" class="theme-toggle">
+    <i class="fas fa-moon"></i>
+  </button>
 
   <!-- Encabezado -->
   <header>
@@ -22,6 +49,7 @@
       <a href="#github">GitHub</a>
       <a href="#testimonials">Testimonios</a>
       <a href="#certifications">Certificaciones</a>
+      <a href="#bootcamp-projects">Proyectos BootCamp</a>
       <a href="#blog">Blog</a>
       <a href="#contact">Contacto</a>
     </nav>
@@ -40,26 +68,32 @@
     <h2>Habilidades</h2>
     <div class="skills-container">
       <div class="skill">
+        <i class="fas fa-database"></i>
         <h3>Data Wrangling</h3>
         <p>Dominio en la limpieza y transformación de datos complejos.</p>
       </div>
       <div class="skill">
+        <i class="fas fa-robot"></i>
         <h3>Machine Learning</h3>
         <p>Implementación de modelos supervisados y no supervisados.</p>
       </div>
       <div class="skill">
+        <i class="fas fa-chart-line"></i>
         <h3>Visualización de Datos</h3>
         <p>Habilidades avanzadas en visualización para comunicar insights de manera efectiva.</p>
       </div>
       <div class="skill">
+        <i class="fas fa-project-diagram"></i>
         <h3>Gestión de Proyectos</h3>
         <p>Experto en Agile, Scrum y planificación estratégica para la gestión de proyectos.</p>
       </div>
       <div class="skill">
+        <i class="fas fa-laptop-code"></i>
         <h3>Transformación Digital</h3>
         <p>Liderazgo en iniciativas de digitalización y optimización de procesos.</p>
       </div>
       <div class="skill">
+        <i class="fas fa-shield-alt"></i>
         <h3>Ciberseguridad</h3>
         <p>Implementación de medidas de seguridad para proteger la infraestructura tecnológica.</p>
       </div>
@@ -69,25 +103,27 @@
   <!-- Sección Proyectos -->
   <section id="projects">
     <h2>Proyectos</h2>
-    <div class="project">
-      <img src="img/Craziest Power BI.gif" alt="Financial Dashboard usando Power BI" />
-      <h3>Financial Dashboard usando Power BI</h3>
-      <p>Visualización avanzada de datos financieros, permitiendo un análisis detallado por departamentos y costos, resultando en una mejora del 20% en la eficiencia del equipo.</p>
-    </div>
-    <div class="project">
-      <img src="img/Data Analytics With Python.jpeg" alt="Data Analytics con Python" />
-      <h3>Data Analytics con Python</h3>
-      <p>Resumen de herramientas y librerías clave utilizadas en el análisis de datos con Python, mejorando la precisión de los modelos predictivos en un 25%.</p>
-    </div>
-    <div class="project">
-      <img src="img/Power BI.gif" alt="Productivity Dashboard en Power BI" />
-      <h3>Productividad Dashboard en Power BI</h3>
-      <p>Panel de control para supervisar la productividad de diferentes áreas, con gráficos dinámicos y métricas clave, incrementando la productividad en un 15%.</p>
-    </div>
-    <div class="project">
-      <img src="img/Proceso de Data hasta IA.jpeg" alt="Proceso de Datos hasta Inteligencia Artificial" />
-      <h3>Proceso de Datos hasta Inteligencia Artificial</h3>
-      <p>Visualización del flujo de trabajo desde la recolección de datos hasta la implementación de inteligencia artificial, optimizando los procesos de análisis en un 30%.</p>
+    <div class="projects-grid">
+      <div class="project">
+        <img src="img/Craziest Power BI.gif" alt="Financial Dashboard usando Power BI" />
+        <h3>Financial Dashboard usando Power BI</h3>
+        <p>Visualización avanzada de datos financieros, permitiendo un análisis detallado por departamentos y costos, resultando en una mejora del 20% en la eficiencia del equipo.</p>
+      </div>
+      <div class="project">
+        <img src="img/Data Analytics With Python.jpeg" alt="Data Analytics con Python" />
+        <h3>Data Analytics con Python</h3>
+        <p>Resumen de herramientas y librerías clave utilizadas en el análisis de datos con Python, mejorando la precisión de los modelos predictivos en un 25%.</p>
+      </div>
+      <div class="project">
+        <img src="img/Power BI.gif" alt="Productivity Dashboard en Power BI" />
+        <h3>Productividad Dashboard en Power BI</h3>
+        <p>Panel de control para supervisar la productividad de diferentes áreas, con gráficos dinámicos y métricas clave, incrementando la productividad en un 15%.</p>
+      </div>
+      <div class="project">
+        <img src="img/Proceso de Data hasta IA.jpeg" alt="Proceso de Datos hasta Inteligencia Artificial" />
+        <h3>Proceso de Datos hasta Inteligencia Artificial</h3>
+        <p>Visualización del flujo de trabajo desde la recolección de datos hasta la implementación de inteligencia artificial, optimizando los procesos de análisis en un 30%.</p>
+      </div>
     </div>
   </section>
 
@@ -100,13 +136,13 @@
     </div>
     <div class="featured-projects">
       <h3>Proyectos Destacados</h3>
-      <div class="project">
+      <div class="featured-project">
         <a href="https://github.com/RubintelUlloaFrancisco/Financial-Dashboard-PowerBI" target="_blank" rel="noopener noreferrer">
           <img src="img/Craziest Power BI.gif" alt="Financial Dashboard usando Power BI" />
           <h4>Financial Dashboard usando Power BI</h4>
         </a>
       </div>
-      <div class="project">
+      <div class="featured-project">
         <a href="https://github.com/RubintelUlloaFrancisco/Data-Analytics-Python" target="_blank" rel="noopener noreferrer">
           <img src="img/Data Analytics With Python.jpeg" alt="Data Analytics con Python" />
           <h4>Data Analytics con Python</h4>
@@ -219,29 +255,76 @@
     <h2>Certificaciones y Cursos</h2>
     <div class="certifications-container">
       <div class="certification">
+        <i class="fas fa-certificate"></i>
         <h3>Python para Ciencia de Datos</h3>
         <p>Principios de Python aplicado a la ciencia de datos, incluyendo bibliotecas como Pandas, NumPy y Matplotlib.</p>
       </div>
       <div class="certification">
+        <i class="fas fa-certificate"></i>
         <h3>SQL desde Cero a Experto</h3>
         <p>Curso intensivo de SQL desde conceptos básicos hasta consultas complejas y optimización.</p>
       </div>
       <div class="certification">
+        <i class="fas fa-certificate"></i>
         <h3>R y R Studio desde Cero hasta DataMaster</h3>
         <p>Análisis avanzado en R y visualización de datos con GGPlot2.</p>
       </div>
       <div class="certification">
+        <i class="fas fa-certificate"></i>
         <h3>Creación de Modelos de Aprendizaje Automático</h3>
         <p>Aplicación de algoritmos de Machine Learning en entornos de producción en Azure.</p>
       </div>
       <div class="certification">
+        <i class="fas fa-certificate"></i>
         <h3>Power BI para Análisis de Datos</h3>
         <p>Técnicas avanzadas para el análisis y visualización de datos en Power BI.</p>
       </div>
       <div class="certification">
+        <i class="fas fa-certificate"></i>
         <h3>Introducción a Bots en Power Virtual Agents</h3>
         <p>Desarrollo de bots con IA en Power Virtual Agents para automatización empresarial.</p>
       </div>
+    </div>
+  </section>
+
+  <!-- Sección Proyectos BootCamp -->
+  <section id="bootcamp-projects">
+    <h2>Proyectos del BootCamp TripleTen</h2>
+    <div class="bootcamp-projects-grid">
+      <!-- Proyecto 1 -->
+      <div class="bootcamp-project">
+        <img src="img/sprint01_python_basico.jpg" alt="SPRINT 01 Python básico I" />
+        <h3>SPRINT 01: Python Básico I</h3>
+        <p>Introducción a los fundamentos de Python, incluyendo variables, tipos de datos y estructuras de control.</p>
+        <a href="https://github.com/RubintelUlloaFrancisco/SPRINT-01-Python-Basico-I" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+      </div>
+      
+      <!-- Proyecto 2 -->
+      <div class="bootcamp-project">
+        <img src="img/sprint02_python_basico.jpg" alt="SPRINT 02 Python básico II" />
+        <h3>SPRINT 02: Python Básico II</h3>
+        <p>Avanzando en Python con funciones, módulos y manejo de excepciones.</p>
+        <a href="https://github.com/RubintelUlloaFrancisco/SPRINT-02-Python-Basico-II" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+      </div>
+      
+      <!-- Proyecto 3 -->
+      <div class="bootcamp-project">
+        <img src="img/sprint03_data_wrangling.jpg" alt="SPRINT 03 Manipulación de datos (Data Wrangling)" />
+        <h3>SPRINT 03: Data Wrangling</h3>
+        <p>Limpieza y transformación de datos utilizando Pandas para preparar datasets para análisis.</p>
+        <a href="https://github.com/RubintelUlloaFrancisco/SPRINT-03-Data-Wrangling" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+      </div>
+      
+      <!-- Continúa con los demás proyectos siguiendo el mismo formato -->
+      
+      <!-- Ejemplo para el último proyecto -->
+      <div class="bootcamp-project">
+        <img src="img/sprint17_proyecto_final.jpg" alt="SPRINT 17 Proyecto final" />
+        <h3>SPRINT 17: Proyecto Final</h3>
+        <p>Desarrollo de un proyecto integral que abarca todas las habilidades adquiridas durante el BootCamp.</p>
+        <a href="https://github.com/RubintelUlloaFrancisco/SPRINT-17-Proyecto-Final" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+      </div>
+      
     </div>
   </section>
 
@@ -276,8 +359,6 @@
       <a href="https://runbintelulloa.blogspot.com" aria-label="Blog" target="_blank" rel="noopener noreferrer"><i class="fas fa-blog"></i></a>
       <a href="skype:bpAPBFsoGEtN?call" aria-label="Skype" target="_blank" rel="noopener noreferrer"><i class="fab fa-skype"></i></a>
     </div>
-    <p>Email: <a href="mailto:RULLOA@GRUPOJEREZ.COM.DO">RULLOA@GRUPOJEREZ.COM.DO</a></p>
-    <p>Teléfono: (809) 533-7741 Ext. 3316 | Flota: (809) 817-6480</p>
 
     <!-- Formulario de Contacto -->
     <form action="https://formspree.io/f/TU_FORM_ID" method="POST">
@@ -296,7 +377,7 @@
 
   <!-- Pie de página -->
   <footer>
-    <p>Rubintel Ulloa Francisco - Contacto: <a href="mailto:RULLOA@GRUPOJEREZ.COM.DO">RULLOA@GRUPOJEREZ.COM.DO</a> | Teléfono: +1-809-848-2770</p>
+    <p>Rubintel Ulloa Francisco - Contacto: <a href="mailto:rubintel7@gmail.com">rubintel7@gmail.com</a> | Teléfono: +1-809-848-2770</p>
   </footer>
 
   <!-- Scripts -->

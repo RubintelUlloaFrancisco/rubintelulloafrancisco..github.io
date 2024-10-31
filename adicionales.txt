@@ -15,9 +15,9 @@ Formspree: Para manejar los envíos de formularios de contacto sin necesidad de 
 
 
 
-Estructura
+Estructura 
 rubintelulloafrancisco.github.io/
-│
+│──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 ├── index.html
 ├── css/
 │   └── styles.css
@@ -41,5 +41,30 @@ rubintelulloafrancisco.github.io/
 ├── .github/
 │   └── workflows/
 │       └── ci.yml
-└── cv/
-    └── Rubintel_Ulloa_CV.pdf
+├── cv/
+├── Rubintel_Ulloa_CV.pdf 
+│ 
+├── project
+│   ├──SPRINT 01 Python básico I, 02-Python_basico_I.ipynb
+│   ├──SPRINT 02 Python básico II, 02-Python_basico_II.ipynb
+│   ├──SPRINT 03 Manipulación de datos (Data Wrangling), 03-Manipulacion_de_datos_(Data_Wrangling).ipynb
+│   ├──SPRINT 04 Análisis estadístico de datos, 04-Analisis_estadistico_de_datos.ipynb
+│   ├──SPRINT 05 Herramientas de desarrollo de software,
+│   ├──SPRINT 06 Proyecto integrado 1, 06-Proyecto_integrado_1.ipynb
+│   ├──SPRINT 07 Recopilación y almacenamiento de datos (SQL), 07-Recopilacion_y_almacenamiento_de_datos_(SQL).ipynb
+│   ├──SPRINT 08 Introducción al machine learning, 08-Introduccion_al_machine_learning.ipynb
+│   ├──SPRINT 09 Aprendizaje supervisado, 09-Aprendizaje_supervisado.ipynb
+│   ├──SPRINT 10 Aprendizaje automático en negocios, 10-Aprendizaje_automatico_en_negocios.ipynb
+│   ├──SPRINT 11 Álgebra lineal, 11-Algebra_lineal.ipynb
+│   ├──SPRINT 12 Métodos numéricos, 12-Metodos_numericos.ipynb
+│   ├──SPRINT 13 Series temporales, 13-Series_temporales.ipynb
+│   ├──SPRINT 14 Aprendizaje automático para textos, 14-Aprendizaje_automatico_para_textos.ipynb
+│   ├──SPRINT 15 Visión artificial, 15-Vision_artificial.ipynb
+│   ├──SPRINT 16 Aprendizaje no supervisado, 16-Aprendizaje_no_supervisado.ipynb
+│   └──SPRINT 17 Proyecto final, 17-Proyecto_final.ipynb
+│   └──SPRINT 00 Excel: Trabajar con datos,
+│   ├──SPRINT 00 Incorporacion al programa,
+│   └──SPRINT 00 Curso de demostración,
+│   └──SPRINT 00 Sandbox,
+│   └──SPRINT 00 Introducción a HTML, CSS,
+│──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
