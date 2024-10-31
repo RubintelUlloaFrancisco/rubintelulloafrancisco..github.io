@@ -1,0 +1,164 @@
+/* Estilos generales para el cuerpo */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #eef1f7;
+    scroll-behavior: smooth;
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  header nav {
+    margin-top: 0.5rem;
+  }
+  
+  header nav a {
+    color: #ddd;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  header nav a:hover {
+    color: #00adb5;
+  }
+  
+  /* Animación de entrada para las secciones */
+  section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    padding: 2rem;
+    margin: 1.5rem auto;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  section.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Títulos de sección */
+  section h2 {
+    font-size: 2rem;
+    color: #222;
+    border-bottom: 3px solid #00adb5;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Contenedores de habilidades */
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .skill {
+    flex: 1 1 250px;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill h3 {
+    color: #00adb5;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Sección de proyectos */
+  .project {
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+  
+  .project img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Contenedor de redes sociales */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .social-icons a {
+    color: #333;
+    font-size: 1.8rem;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #00adb5;
+    transform: scale(1.1);
+  }
+  
+  /* Pie de página */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Ajustes para pantallas pequeñas */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    header nav a {
+      font-size: 1rem;
+    }
+    .skills-container {
+      flex-direction: column;
+    }
+  }
+  
