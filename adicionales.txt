@@ -12,6 +12,10 @@ Shields.io: Para crear badges personalizados para tus repositorios de GitHub.
 GitHub Readme Stats: Para generar estadísticas visuales de tu perfil de GitHub.
 Formspree: Para manejar los envíos de formularios de contacto sin necesidad de un backend.
 
+
+
+
+Estructura
 rubintelulloafrancisco.github.io/
 │
 ├── index.html
