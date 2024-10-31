@@ -11,3 +11,31 @@ W3C Accessibility Checker: Para asegurar que tu sitio web cumple con los estánd
 Shields.io: Para crear badges personalizados para tus repositorios de GitHub.
 GitHub Readme Stats: Para generar estadísticas visuales de tu perfil de GitHub.
 Formspree: Para manejar los envíos de formularios de contacto sin necesidad de un backend.
+
+rubintelulloafrancisco.github.io/
+│
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── scripts.js
+├── img/
+│   ├── ivan_piniella.jpg
+│   ├── rosanna_sanchez.jpg
+│   ├── kelvin_valdez.jpg
+│   ├── flor_de_liz.jpg
+│   ├── eddy_mateo.jpg
+│   ├── maria_rodriguez.jpg
+│   ├── gilberto_abreu.jpg
+│   ├── ruben_dario.jpg
+│   ├── michael_cabral.jpg
+│   ├── leovigildo_bacilio.jpg
+│   ├── Craziest Power BI.gif
+│   ├── Imagen-0.gif
+│   ├── Power BI.gif 
+│   ├── rubintel_ulloa.jpg
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+└── cv/
+    └── Rubintel_Ulloa_CV.pdf
