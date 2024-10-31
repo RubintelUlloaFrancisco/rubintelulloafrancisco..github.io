@@ -1,0 +1,6 @@
+. Recursos Adicionales
+Google PageSpeed Insights: Para analizar y optimizar la velocidad de tu sitio web.
+W3C Accessibility Checker: Para asegurar que tu sitio web cumple con los estándares de accesibilidad.
+Shields.io: Para crear badges personalizados para tus repositorios de GitHub.
+GitHub Readme Stats: Para generar estadísticas visuales de tu perfil de GitHub.
+Formspree: Para manejar los envíos de formularios de contacto sin necesidad de un backend.
