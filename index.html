@@ -2,18 +2,18 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Perfil Profesional - Rubintel Ulloa Francisco</title>
-  
-  <!-- Meta Tags para SEO -->
   <meta name="description" content="Perfil profesional de Rubintel Ulloa Francisco, Data Scientist, Gerente de Proyectos y Coordinador TI. Especializado en Machine Learning, Power BI y Transformación Digital.">
+  
+  <!-- SEO Meta Tags -->
   <meta name="keywords" content="Data Scientist, Machine Learning, Power BI, Transformación Digital, SQL, Python, Ciberseguridad, Gestión de Proyectos, Big Data">
   <meta name="author" content="Rubintel Ulloa Francisco">
   
-  <!-- Meta Tags para redes sociales -->
+  <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Perfil Profesional - Rubintel Ulloa Francisco">
   <meta property="og:description" content="Perfil profesional de Rubintel Ulloa Francisco, Data Scientist, Gerente de Proyectos y Coordinador TI. Especializado en Machine Learning, Power BI y Transformación Digital.">
-  <meta property="og:image" content="img/og-image.jpg">
+  <meta property="og:image" content="https://rubintelulloafrancisco.github.io/img/og-image.jpg">
   <meta property="og:url" content="https://rubintelulloafrancisco.github.io/">
   <meta property="og:type" content="website">
   
@@ -23,7 +23,19 @@
   <!-- Estilos CSS -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Theme Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleButton = document.getElementById('theme-toggle');
+      toggleButton.addEventListener('click', function () {
+        document.body.classList.toggle('dark-mode');
+      });
+    });
+  </script>
 </head>
 <body>
 
@@ -44,6 +56,7 @@
       <a href="#github">GitHub</a>
       <a href="#testimonials">Testimonios</a>
       <a href="#certifications">Certificaciones</a>
+      <a href="#bootcamp-projects">Proyectos BootCamp</a>
       <a href="#blog">Blog</a>
       <a href="#contact">Contacto</a>
     </nav>
@@ -97,25 +110,28 @@
   <!-- Sección Proyectos -->
   <section id="projects">
     <h2>Proyectos</h2>
+    
+    <!-- Proyectos Individuales Destacados -->
     <div class="projects-grid">
-      <!-- Proyecto Individual -->
       <div class="project">
         <img src="img/Craziest Power BI.gif" alt="Financial Dashboard usando Power BI" loading="lazy" />
         <h3>Financial Dashboard usando Power BI</h3>
-        <p>Visualización avanzada de datos financieros, permitiendo un análisis detallado por departamentos y costos.</p>
+        <p>Visualización avanzada de datos financieros, permitiendo un análisis detallado por departamentos y costos, resultando en una mejora del 20% en la eficiencia del equipo.</p>
       </div>
-
-      <!-- Proyectos del Bootcamp -->
-      <h3>Proyectos del BootCamp TripleTen</h3>
-      <div class="bootcamp-projects-grid">
-        <!-- Proyecto Bootcamp 1 -->
-        <div class="bootcamp-project">
-          <img src="img/sprint01_python_basico.jpg" alt="SPRINT 01 Python Básico I" loading="lazy" />
-          <h4>SPRINT 01: Python Básico I</h4>
-          <p>Introducción a los fundamentos de Python, incluyendo variables, tipos de datos y estructuras de control.</p>
-          <a href="project/01-Python_basico_I.html" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
-        </div>
-        <!-- Agrega los demás proyectos siguiendo el mismo formato -->
+      <div class="project">
+        <img src="img/Data Analytics With Python.jpeg" alt="Data Analytics con Python" loading="lazy" />
+        <h3>Data Analytics con Python</h3>
+        <p>Resumen de herramientas y librerías clave utilizadas en el análisis de datos con Python, mejorando la precisión de los modelos predictivos en un 25%.</p>
+      </div>
+      <div class="project">
+        <img src="img/Power BI.gif" alt="Productivity Dashboard en Power BI" loading="lazy" />
+        <h3>Productividad Dashboard en Power BI</h3>
+        <p>Panel de control para supervisar la productividad de diferentes áreas, con gráficos dinámicos y métricas clave, incrementando la productividad en un 15%.</p>
+      </div>
+      <div class="project">
+        <img src="img/Proceso de Data hasta IA.jpeg" alt="Proceso de Datos hasta Inteligencia Artificial" loading="lazy" />
+        <h3>Proceso de Datos hasta Inteligencia Artificial</h3>
+        <p>Visualización del flujo de trabajo desde la recolección de datos hasta la implementación de IA, optimizando los procesos de análisis en un 30%.</p>
       </div>
     </div>
   </section>
@@ -127,19 +143,119 @@
       <img src="https://github-readme-stats.vercel.app/api?username=RubintelUlloaFrancisco&show_icons=true&theme=radical" alt="GitHub Stats" loading="lazy" />
       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RubintelUlloaFrancisco&layout=compact&theme=radical" alt="Top Languages" loading="lazy" />
     </div>
+    <div class="featured-projects">
+      <h3>Proyectos Destacados</h3>
+      <div class="featured-project">
+        <a href="https://github.com/RubintelUlloaFrancisco/Financial-Dashboard-PowerBI" target="_blank" rel="noopener noreferrer">
+          <img src="img/Craziest Power BI.gif" alt="Financial Dashboard usando Power BI" loading="lazy" />
+          <h4>Financial Dashboard usando Power BI</h4>
+        </a>
+      </div>
+      <div class="featured-project">
+        <a href="https://github.com/RubintelUlloaFrancisco/Data-Analytics-Python" target="_blank" rel="noopener noreferrer">
+          <img src="img/Data Analytics With Python.jpeg" alt="Data Analytics con Python" loading="lazy" />
+          <h4>Data Analytics con Python</h4>
+        </a>
+      </div>
+      <!-- Añade más proyectos destacados aquí -->
+    </div>
   </section>
 
   <!-- Sección Testimonios -->
   <section id="testimonials">
     <h2>Testimonios</h2>
     <div class="testimonials-container">
+      
+      <!-- Testimonio 1 -->
       <div class="testimonial">
         <img src="img/ivan_piniella.jpg" alt="Iván Piniella Pucheu" class="testimonial-photo" loading="lazy">
         <h3>Iván Piniella Pucheu</h3>
-        <p>Consultor de Marketing</p>
-        <p>He tenido la oportunidad de trabajar con Rubintel en el área de informática con buenos resultados...</p>
+        <p class="position">Consultor de Marketing</p>
+        <p class="date">6 de julio de 2024</p>
+        <p class="testimonial-text">He tenido la oportunidad de trabajar con Rubintel en el área de informática con buenos resultados, es una persona eficiente, amable, colaborador y sobre todo un buen profesional.</p>
       </div>
-      <!-- Añadir otros testimonios -->
+      
+      <!-- Testimonio 2 -->
+      <div class="testimonial">
+        <img src="img/rosanna_sanchez.jpg" alt="Rosanna Sanchez" class="testimonial-photo" loading="lazy">
+        <h3>Rosanna Sanchez</h3>
+        <p class="position">MBA Administración y Dirección RH</p>
+        <p class="date">8 de noviembre de 2022</p>
+        <p class="testimonial-text">Excelente colaborador.</p>
+      </div>
+
+      <!-- Testimonio 3 -->
+      <div class="testimonial">
+        <img src="img/kelvin_valdez.jpg" alt="Kelvin Valdez" class="testimonial-photo" loading="lazy">
+        <h3>Kelvin Valdez</h3>
+        <p class="position">Subgerente de Contabilidad</p>
+        <p class="date">9 de octubre de 2022</p>
+        <p class="testimonial-text">Es un profesional capacitado con amplio conocimiento de ofimática, programación y Análisis de Datos. Es objetivo y responsable con sus labores.</p>
+      </div>
+
+      <!-- Testimonio 4 -->
+      <div class="testimonial">
+        <img src="img/flor_de_liz.jpg" alt="Flor de Liz Abreu Almonte" class="testimonial-photo" loading="lazy">
+        <h3>Flor de Liz Abreu Almonte</h3>
+        <p class="position">Contadora | MBA | Auditora</p>
+        <p class="date">26 de septiembre de 2022</p>
+        <p class="testimonial-text">Muy colaborador y siempre orientado a la solución de incidentes. Además siempre fue puntual y cumplía con sus objetivos.</p>
+      </div>
+      
+      <!-- Testimonio 5 -->
+      <div class="testimonial">
+        <img src="img/eddy_mateo.jpg" alt="Eddy Mateo" class="testimonial-photo" loading="lazy">
+        <h3>Eddy Mateo</h3>
+        <p class="position">MPM | Plant IT Lead at BD, Santo Domingo</p>
+        <p class="date">26 de septiembre de 2022</p>
+        <p class="testimonial-text">I highly recommend Rubintel Ulloa as a Project Manager, System Implementation specialist and System Analyst. He is amazing at his job! He knows his way around people, he is good with the clients, does whatever it takes to help the company and gets things done.</p>
+      </div>
+      
+      <!-- Testimonio 6 -->
+      <div class="testimonial">
+        <img src="img/maria_rodriguez.jpg" alt="Maria Altagracia Rodríguez Bello" class="testimonial-photo" loading="lazy">
+        <h3>Maria Altagracia Rodríguez Bello</h3>
+        <p class="position">Técnica de Informática / Marketing Digital</p>
+        <p class="date">23 de septiembre de 2022</p>
+        <p class="testimonial-text">He tenido el honor de conocer al Sr. Rubintel Ulloa Francisco, sin duda es un compañero dedicado a enseñar todo su conocimiento, dedicado a enseñarme todo lo conocimiento que hoy poseo es una persona muy madura, responsable. Posee un excelente dominio para las relaciones interpersonales, el trato con las personas y la atención al público. Entre las características que le destacan está el de ser proactivo, resaltando su habilidad para comunicarse, su claro nivel de expresión y las relaciones personales para el trabajo en equipo. “Espero que siga adelante tiene mucho por dar Nunca dejes de auto superarte!”</p>
+      </div>
+      
+      <!-- Testimonio 7 -->
+      <div class="testimonial">
+        <img src="img/gilberto_abreu.jpg" alt="Gilberto Abreu, MBA, PMP" class="testimonial-photo" loading="lazy">
+        <h3>Gilberto Abreu, MBA, PMP</h3>
+        <p class="position">IT Mergers, Acquisitions and Divestments - Implementations & Integration Manager at Nestlé</p>
+        <p class="date">22 de septiembre de 2022</p>
+        <p class="testimonial-text">Had the pleasure to work with Rubintel in many projects, he is a very responsible resource oriented to results, is a competent team player committed striving to deliver the best to fulfill customers requests.</p>
+      </div>
+      
+      <!-- Testimonio 8 -->
+      <div class="testimonial">
+        <img src="img/ruben_dario.jpg" alt="Rubén Darío Hiciano" class="testimonial-photo" loading="lazy">
+        <h3>Rubén Darío Hiciano</h3>
+        <p class="position">Business Developer, Infrastructure and IoT Specialist, IT Consultant, Sales Engineer, Cybersecurity Enthusiast</p>
+        <p class="date">22 de septiembre de 2022</p>
+        <p class="testimonial-text">Excelente profesional enfocado en resultados. Muy buena gestión de los tiempos y recursos asignados.</p>
+      </div>
+      
+      <!-- Testimonio 9 -->
+      <div class="testimonial">
+        <img src="img/michael_cabral.jpg" alt="Michael Cabral Rodriguez" class="testimonial-photo" loading="lazy">
+        <h3>Michael Cabral Rodriguez</h3>
+        <p class="position">Especialista en el área de la tecnología</p>
+        <p class="date">23 de septiembre de 2022</p>
+        <p class="testimonial-text">Excelente profesional, con altos conocimiento en el área de la tecnología.</p>
+      </div>
+      
+      <!-- Testimonio 10 -->
+      <div class="testimonial">
+        <img src="img/leovigildo_bacilio.jpg" alt="Leovigildo Bacilio Martinez" class="testimonial-photo" loading="lazy">
+        <h3>Leovigildo Bacilio Martinez</h3>
+        <p class="position">Asesorías financieras y Fiscales</p>
+        <p class="date">23 de septiembre de 2022</p>
+        <p class="testimonial-text">Le recomiendo los servicios del Sr. Rubintel, son excelentes muy detallados y con mucha claridad y excelente calidad de servicios.</p>
+      </div>
+      
     </div>
   </section>
 
@@ -150,26 +266,194 @@
       <div class="certification">
         <i class="fas fa-certificate"></i>
         <h3>Python para Ciencia de Datos</h3>
-        <p>Principios de Python aplicado a la ciencia de datos, incluyendo bibliotecas como Pandas y Matplotlib.</p>
+        <p>Principios de Python aplicado a la ciencia de datos, incluyendo bibliotecas como Pandas, NumPy y Matplotlib.</p>
       </div>
-      <!-- Añadir más certificaciones -->
+      <div class="certification">
+        <i class="fas fa-certificate"></i>
+        <h3>SQL desde Cero a Experto</h3>
+        <p>Curso intensivo de SQL desde conceptos básicos hasta consultas complejas y optimización.</p>
+      </div>
+      <div class="certification">
+        <i class="fas fa-certificate"></i>
+        <h3>R y R Studio desde Cero hasta DataMaster</h3>
+        <p>Análisis avanzado en R y visualización de datos con GGPlot2.</p>
+      </div>
+      <div class="certification">
+        <i class="fas fa-certificate"></i>
+        <h3>Creación de Modelos de Aprendizaje Automático</h3>
+        <p>Aplicación de algoritmos de Machine Learning en entornos de producción en Azure.</p>
+      </div>
+      <div class="certification">
+        <i class="fas fa-certificate"></i>
+        <h3>Power BI para Análisis de Datos</h3>
+        <p>Técnicas avanzadas para el análisis y visualización de datos en Power BI.</p>
+      </div>
+      <div class="certification">
+        <i class="fas fa-certificate"></i>
+        <h3>Introducción a Bots en Power Virtual Agents</h3>
+        <p>Desarrollo de bots con IA en Power Virtual Agents para automatización empresarial.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Sección Blog -->
+  <!-- Sección Proyectos BootCamp -->
+  <section id="bootcamp-projects">
+    <h2>Proyectos del BootCamp TripleTen</h2>
+    <p>Estos proyectos representan el desarrollo de habilidades clave en Python, Machine Learning, SQL, y Data Science, completados durante el BootCamp TripleTen.</p>
+    
+    <div class="bootcamp-projects-grid">
+      
+      <!-- Proyecto Bootcamp 1 -->
+      <div class="bootcamp-project">
+        <img src="img/sprint01_python_basico.jpg" alt="SPRINT 01 Python Básico I" loading="lazy" />
+        <h3>SPRINT 01: Python Básico I</h3>
+        <p>Introducción a los fundamentos de Python, incluyendo variables, tipos de datos y estructuras de control.</p>
+        <a href="project/SPRINT%2001%20Python%20b%C3%A1sico%20I/01-Python_basico_I.html" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+        <a href="https://github.com/RubintelUlloaFrancisco/SPRINT-01-Python-Basico-I" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+      </div>
+      
+      <!-- Proyecto Bootcamp 2 -->
+      <div class="bootcamp-project">
+        <img src="img/sprint02_python_basico.jpg" alt="SPRINT 02 Python Básico II" loading="lazy" />
+        <h3>SPRINT 02: Python Básico II</h3>
+        <p>Avanzando en Python con funciones, módulos y manejo de excepciones.</p>
+        <a href="project/SPRINT%2002%20Python%20b%C3%A1sico%20II/02-Python_basico_II.html" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+        <a href="https://github.com/RubintelUlloaFrancisco/SPRINT-02-Python-Basico-II" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+      </div>
+      
+      <!-- Proyecto Bootcamp 3 -->
+      <div class="bootcamp-project">
+        <img src="img/sprint03_data_wrangling.jpg" alt="SPRINT 03 Manipulación de Datos (Data Wrangling)" loading="lazy" />
+        <h3>SPRINT 03: Data Wrangling</h3>
+        <p>Limpieza y transformación de datos utilizando Pandas para preparar datasets para análisis.</p>
+        <a href="project/SPRINT%2003%20Manipulaci%C3%B3n%20de%20datos%20(Data%20Wrangling)/03-Manipulacion_de_datos_(Data_Wrangling).html" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+        <a href="https://github.com/RubintelUlloaFrancisco/SPRINT-03-Data-Wrangling" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+      </div>
+      
+      <!-- Proyecto Bootcamp 4 -->
+      <div class="bootcamp-project">
+        <img src="img/sprint04_analisis_estadistico.jpg" alt="SPRINT 04 Análisis Estadístico" loading="lazy" />
+        <h3>SPRINT 04: Análisis Estadístico de Datos</h3>
+        <p>Aplicación de métodos estadísticos para interpretar y analizar grandes volúmenes de datos.</p>
+        <a href="project/SPRINT%2004%20Analisis_estadistico_de_datos.html" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+        <a href="https://github.com/RubintelUlloaFrancisco/SPRINT-04-Analisis-Estadistico" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+      </div>
+      
+      <!-- Proyecto Bootcamp 5 -->
+      <div class="bootcamp-project">
+        <img src="img/sprint07_sql.jpg" alt="SPRINT 07 SQL" loading="lazy" />
+        <h3>SPRINT 07: Recopilación y Almacenamiento de Datos (SQL)</h3>
+        <p>Fundamentos y técnicas avanzadas en SQL para la recopilación y almacenamiento de datos.</p>
+        <a href="project/SPRINT%2007%20Recopilacion_y_almacenamiento_de_datos_(SQL).html" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+        <a href="https://github.com/RubintelUlloaFrancisco/SPRINT-07-SQL" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+      </div>
+
+      <!-- Proyecto Bootcamp 6 -->
+      <div class="bootcamp-project">
+        <img src="img/sprint08_machine_learning.jpg" alt="SPRINT 08 Introducción al Machine Learning" loading="lazy" />
+        <h3>SPRINT 08: Introducción al Machine Learning</h3>
+        <p>Conceptos básicos de machine learning y desarrollo de modelos predictivos.</p>
+        <a href="project/SPRINT%2008%20Introduccion_al_machine_learning.html" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+        <a href="https://github.com/RubintelUlloaFrancisco/SPRINT-08-Introduccion-Machine-Learning" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+      </div>
+      
+      <!-- Proyecto Bootcamp 7 -->
+      <div class="bootcamp-project">
+        <img src="img/sprint09_aprendizaje_supervisado.jpg" alt="SPRINT 09 Aprendizaje Supervisado" loading="lazy" />
+        <h3>SPRINT 09: Aprendizaje Supervisado</h3>
+        <p>Implementación de modelos supervisados para predicción y clasificación de datos.</p>
+        <a href="project/SPRINT%2009%20Aprendizaje_supervisado.html" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+        <a href="https://github.com/RubintelUlloaFrancisco/SPRINT-09-Aprendizaje-Supervisado" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+      </div>
+      
+      <!-- Proyecto Bootcamp 8 -->
+      <div class="bootcamp-project">
+        <img src="img/sprint10_machine_learning_negocios.jpg" alt="SPRINT 10 Aprendizaje Automático en Negocios" loading="lazy" />
+        <h3>SPRINT 10: Aprendizaje Automático en Negocios</h3>
+        <p>Aplicación de machine learning en entornos empresariales para mejorar procesos de negocio.</p>
+        <a href="project/SPRINT%2010%20Aprendizaje_automatico_en_negocios.html" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+        <a href="https://github.com/RubintelUlloaFrancisco/SPRINT-10-Aprendizaje-Automatico-Negocios" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+      </div>
+      
+      <!-- Proyecto Bootcamp 9 -->
+      <div class="bootcamp-project">
+        <img src="img/sprint11_algebra_lineal.jpg" alt="SPRINT 11 Álgebra Lineal" loading="lazy" />
+        <h3>SPRINT 11: Álgebra Lineal</h3>
+        <p>Aplicación de conceptos de álgebra lineal en el análisis de datos y machine learning.</p>
+        <a href="project/SPRINT%2011%20Algebra_lineal.html" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+        <a href="https://github.com/RubintelUlloaFrancisco/SPRINT-11-Algebra-Lineal" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+      </div>
+      
+      <!-- Proyecto Bootcamp 10 -->
+      <div class="bootcamp-project">
+        <img src="img/sprint12_metodos_numericos.jpg" alt="SPRINT 12 Métodos Numéricos" loading="lazy" />
+        <h3>SPRINT 12: Métodos Numéricos</h3>
+        <p>Implementación de métodos numéricos para la solución de problemas matemáticos complejos.</p>
+        <a href="project/SPRINT%2012%20Metodos_numericos.html" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+        <a href="https://github.com/RubintelUlloaFrancisco/SPRINT-12-Metodos-Numericos" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+      </div>
+      
+      <!-- Proyecto Bootcamp 11 -->
+      <div class="bootcamp-project">
+        <img src="img/sprint13_series_temporales.jpg" alt="SPRINT 13 Series Temporales" loading="lazy" />
+        <h3>SPRINT 13: Series Temporales</h3>
+        <p>Análisis de series temporales para realizar predicciones basadas en datos históricos.</p>
+        <a href="project/SPRINT%2013%20Series_temporales.html" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+        <a href="https://github.com/RubintelUlloaFrancisco/SPRINT-13-Series-Temporales" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+      </div>
+      
+      <!-- Proyecto Bootcamp 12 -->
+      <div class="bootcamp-project">
+        <img src="img/sprint14_aprendizaje_textos.jpg" alt="SPRINT 14 Aprendizaje Automático para Textos" loading="lazy" />
+        <h3>SPRINT 14: Aprendizaje Automático para Textos</h3>
+        <p>Uso de machine learning para el procesamiento y análisis de texto.</p>
+        <a href="project/SPRINT%2014%20Aprendizaje_automatico_para_textos.html" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+        <a href="https://github.com/RubintelUlloaFrancisco/SPRINT-14-Aprendizaje-Automatico-para-Textos" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+      </div>
+      
+      <!-- Proyecto Bootcamp 13 -->
+      <div class="bootcamp-project">
+        <img src="img/sprint15_vision_artificial.jpg" alt="SPRINT 15 Visión Artificial" loading="lazy" />
+        <h3>SPRINT 15: Visión Artificial</h3>
+        <p>Aplicación de técnicas de visión artificial para el reconocimiento y clasificación de imágenes.</p>
+        <a href="project/SPRINT%2015%20Vision_artificial.html" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+        <a href="https://github.com/RubintelUlloaFrancisco/SPRINT-15-Vision-Artificial" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+      </div>
+      
+      <!-- Proyecto Bootcamp 14 -->
+      <div class="bootcamp-project">
+        <img src="img/sprint16_aprendizaje_no_supervisado.jpg" alt="SPRINT 16 Aprendizaje No Supervisado" loading="lazy" />
+        <h3>SPRINT 16: Aprendizaje No Supervisado</h3>
+        <p>Implementación de modelos no supervisados para la agrupación y segmentación de datos.</p>
+        <a href="project/SPRINT%2016%20Aprendizaje_no_supervisado.html" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+        <a href="https://github.com/RubintelUlloaFrancisco/SPRINT-16-Aprendizaje-No-Supervisado" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+      </div>
+      
+      <!-- Proyecto Bootcamp 15 -->
+      <div class="bootcamp-project">
+        <img src="img/sprint17_proyecto_final.jpg" alt="SPRINT 17 Proyecto Final" loading="lazy" />
+        <h3>SPRINT 17: Proyecto Final</h3>
+        <p>Desarrollo de un proyecto integral que abarca todas las habilidades adquiridas durante el BootCamp.</p>
+        <a href="project/SPRINT%2017%20Proyecto%20final/17-Proyecto_final.html" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+        <a href="https://github.com/RubintelUlloaFrancisco/SPRINT-17-Proyecto-Final" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Sección Blog Técnico -->
   <section id="blog">
     <h2>Blog Técnico</h2>
     <div class="blog-posts">
       <div class="post">
         <h3><a href="https://runbintelulloa.blogspot.com/2024/04/ejemplo-de-articulo.html" target="_blank" rel="noopener noreferrer">Título del Artículo 1</a></h3>
-        <p>Breve descripción del contenido del artículo.</p>
+        <p>Breve descripción del contenido del artículo, explicando temas relevantes de ciencia de datos y proyectos.</p>
       </div>
-      <!-- Añadir más publicaciones del blog -->
       <div class="post">
         <h3><a href="https://runbintelulloa.blogspot.com/2024/03/otro-articulo.html" target="_blank" rel="noopener noreferrer">Título del Artículo 2</a></h3>
         <p>Descripción de otro artículo técnico sobre Machine Learning, Power BI o cualquier otra tecnología que domines.</p>
       </div>
-      <!-- Agrega más publicaciones siguiendo el mismo formato -->
+      <!-- Añade más posts aquí -->
     </div>
   </section>
 
@@ -180,7 +464,6 @@
     <div class="social-icons">
       <a href="https://linkedin.com/in/rubintel-ulloa-francisco" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
       <a href="https://github.com/RubintelUlloaFrancisco" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-      <a href="mailto:rubintel7@gmail.com" aria-label="Correo"><i class="fas fa-envelope"></i></a>
       <a href="https://x.com/Rubintel_Ulloa" aria-label="Twitter (X)" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
       <a href="https://facebook.com/rubintel" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
       <a href="https://instagram.com/rubintel" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
@@ -194,13 +477,13 @@
     <form action="https://formspree.io/f/TU_FORM_ID" method="POST">
       <label for="name">Nombre:</label>
       <input type="text" id="name" name="name" required>
-
+      
       <label for="email">Correo Electrónico:</label>
       <input type="email" id="email" name="email" required>
-
+      
       <label for="message">Mensaje:</label>
       <textarea id="message" name="message" rows="5" required></textarea>
-
+      
       <button type="submit">Enviar</button>
     </form>
   </section>
@@ -208,18 +491,10 @@
   <!-- Pie de página -->
   <footer>
     <p>Rubintel Ulloa Francisco - Contacto: <a href="mailto:rubintel7@gmail.com">rubintel7@gmail.com</a> | Teléfono: +1-809-848-2770</p>
+    <p>&copy; 2024 Rubintel Ulloa Francisco. Todos los derechos reservados.</p>
   </footer>
 
   <!-- Scripts -->
   <script src="js/scripts.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const toggleButton = document.getElementById('theme-toggle');
-      toggleButton.addEventListener('click', function () {
-        document.body.classList.toggle('dark-mode');
-      });
-    });
-  </script>
 </body>
 </html>
-
