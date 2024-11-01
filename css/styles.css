@@ -258,44 +258,57 @@ section h2::after {
   margin-top: 1rem;
 }
 
-.featured-projects {
-  margin-top: 2rem;
+/* Estilos para la Sub-Sección de Proyectos del Bootcamp */
+.bootcamp-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
-.featured-projects h3 {
-  margin-bottom: 1rem;
-  color: #222;
+.bootcamp-project {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
-.featured-projects .featured-project {
-  margin-bottom: 1.5rem;
-}
-
-.featured-projects .featured-project a {
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.featured-projects .featured-project img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+.bootcamp-project img {
+  max-width: 100%;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.featured-projects .featured-project img:hover {
+.bootcamp-project img:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
-.featured-projects .featured-project h4 {
-  margin-top: 0.5rem;
+.bootcamp-project h4 {
+  font-size: 1.2rem;
   color: #00adb5;
+  margin-top: 0.5rem;
 }
+
+.bootcamp-project p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.bootcamp-project a {
+  color: #0077b5;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.bootcamp-project a:hover {
+  text-decoration: underline;
+}
+
 
 /* Sección Testimonios */
 #testimonials {
